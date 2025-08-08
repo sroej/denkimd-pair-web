@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DENKI-MD  DASHBOARD</title>
+  <link rel="website icon" type="jpg" href="https://files.catbox.moe/b9qaum.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: url('https://files.catbox.moe/b9qaum.jpg') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      color: #ffff;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(8px);
+      z-index: 0;
+    }
+
+    .card {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(0, 255, 255, 0.3);
+      padding: 2.5rem;
+      border-radius: 30px;
+      max-width: 480px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 0 40px rgba(0, 255, 255, 0.4), inset 0 0 8px rgba(0, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      animation: fadeIn 1s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { transform: scale(0.96); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .card img.profile {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid yellow;
+      margin-bottom: 1.2rem;
+      box-shadow: 0 0 25px yellow;
+      transition: transform 0.4s;
+    }
+
+    .card img.profile:hover {
+      transform: rotate(2deg) scale(1.03);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: yellow;
+      text-shadow: 0 0 10px yellow;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      background: rgba(255, 255, 255, 0.08);
+      border: 2px solid yellow;
+      border-radius: 14px;
+      color: yellow;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+      text-decoration: none;
+      backdrop-filter: blur(4px);
+    }
+
+    .btn:hover {
+      background-color: rgba(0, 234, 255, 0.2);
+      box-shadow: 0 0 15px #00eaff, 0 0 5px #00eaff inset;
+      transform: scale(1.04);
+    }
+
+    audio {
+      margin-top: 1.2rem;
+      width: 100%;
+      border-radius: 10px;
+      background: yellow;
+      border: 1px solid yellow;
+    }
+
+    #digital-clock {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      font-size: 1rem;
+      color: yellow;
+      text-shadow: 0 0 6px #00ffcc;
+    }
+
+    .tz-flag {
+      width: 22px;
+      height: 14px;
+      border-radius: 3px;
+      border: 1px solid yellow;
+    }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: yellow;
+      text-shadow: 0 0 4px #00ffff;
+    }
+
+    @media screen and (max-width: 480px) {
+      .card {
+        padding: 2rem 1.2rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .btn {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://files.catbox.moe/b9qaum.jpg" alt="DENKI-MD" class="profile" />
+    <h1>DENKI-MD</h1>
+
+    <a class="btn" href="https://github.com/denki-arch/DENKI-MD/fork" target="_blank"><i class="fas fa-code-branch"></i> 𝙵𝙾𝚁𝙺 𝚁𝙴𝙿𝙾</a>
+    <a class="btn" href="/pair"><i class="fas fa-link"></i> 𝙿𝙰𝙸𝚁 𝙲𝙾𝙳𝙴</a>
+    <a class="btn" href="/qr"><i class="fas fa-qrcode"></i> 𝚀𝚁 𝙲𝙾𝙳𝙴</a>
+    <a class="btn" href="https://whatsapp.com/channel/0029VbB06qE9sBIFlu00Dq0R" target="_blank"><i class="fab fa-whatsapp"></i>𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿</a>
+    <a class="btn"
+    href="https://t.me/denkitech_hub " target="_blanck"><i class="fab fa-telegram"></i>𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼</a>
+    
+    
+    <a class="btn" href="https://wa.me/2250143875869" target="_blank"><i class="fas fa-headset"></i>  𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙳𝙴𝚅𝙴𝙻𝙾𝙴𝚁 </a>
+
+    <audio controls autoplay loop>
+      <source src="https://files.catbox.moe/hjkha3.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <div id="digital-clock">
+      <span id="time"></span>
+      <img src="https://files.catbox.moe/b9qaum.jpg" alt="Tanzania Flag" class="tz-flag">
+    </div>
+
+    <div class="footer">© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ⚡𝑫𝑬𝑵𝑲𝑰⚡</div>
+  </div>
+
+  <script>
+    function updateTime() {
+      const options = {
+        timeZone: 'America/Port-au-Prince',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+      };
+      const now = new Date().toLocaleTimeString('en-GB', options);
+      document.getElementById('time').textContent = now;
+    }
+
+    setInterval(updateTime, 1000);
+    updateTime();
+  </script>
+</body>
+      </html>
