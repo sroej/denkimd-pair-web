@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: megalodon
+    env: docker
+    plan: free
+    branch: main
+    repo: https://github.com/sroej/denkimd-pair-web
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
