@@ -98,7 +98,7 @@ router.get('/', async (req, res) => {
                     try {
                         const mega_url = await upload(fs.createReadStream(rf), `${sock.user.id}.json`);
                         const string_session = mega_url.replace('https://mega.nz/file/', '');
-                        let md = "                        ? 'DENKI~MD~'+ megaUrl.split("https://mega.nz/file/")[1];
+                        let md = "DENKI~MD~"+ megaUrl.split("https://mega.nz/file/")[1];
                         let code = await sock.sendMessage(sock.user.id, { text: md });
 
                         let desc = `𝗣𝗔𝗜𝗥 𝗖𝗢𝗗𝗘 𝗖𝗢𝗡𝗡𝗘𝗖𝗧𝗘𝗗 𝗦𝗨𝗖𝗖𝗘𝗦𝗦𝗙𝗨𝗟𝗟𝗬 
